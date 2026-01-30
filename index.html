@@ -1,12 +1,171 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title> My Temporary
-    Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Fintech training SaaS — hands-on courses, live labs, career outcomes." />
+    <title>PulseFin — Fintech Training That Feels Like a Mission</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1> This is the  title.
-    </h1>
-    <p> This is a  paragraph.
-    </p>
+    <header class="site-header">
+      <div class="container header-row">
+        <div class="brand">
+          <div class="logo-mark">PF</div>
+          <div class="brand-text">
+            <h1>PulseFin</h1>
+            <p class="muted">Fintech training with purpose</p>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#courses">Courses</a>
+          <a href="#labs">Labs</a>
+          <a href="#pricing">Pricing</a>
+          <a class="btn-outline" href="#signup">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h2>Learn finance, build systems, change markets.</h2>
+            <p class="lead">Hands-on fintech courses, live trading labs, and SaaS-grade projects designed to move your career forward. Learn the tools investors and engineers actually use.</p>
+            <div class="hero-ctas">
+              <a class="btn-primary" href="#signup">Start Free Trial</a>
+              <a class="btn-ghost" href="#courses">View Courses</a>
+            </div>
+
+            <ul class="stats">
+              <li><strong>120+</strong><span>Hours of content</span></li>
+              <li><strong>35</strong><span>Real projects</span></li>
+              <li><strong>Career</strong><span>Mentorship</span></li>
+            </ul>
+          </div>
+
+          <aside class="hero-card">
+            <div class="card-header">Featured Cohort</div>
+            <div class="card-body">
+              <h3>Algorithmic Trading Bootcamp</h3>
+              <p>10-week live cohort — market data, backtesting, deployment to cloud.</p>
+              <a class="btn-sm" href="#signup">Join Waitlist</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="courses" class="section container">
+        <h3 class="section-title">Courses that make you market-ready</h3>
+        <div class="grid-3">
+          <article class="card">
+            <h4>Quantitative Finance</h4>
+            <p>Probability, time-series, factor models, portfolio construction.</p>
+            <a href="#signup" class="link-cta">Enroll</a>
+          </article>
+
+          <article class="card">
+            <h4>Data Engineering for Finance</h4>
+            <p>Streaming data, feature stores, low-latency pipelines.</p>
+            <a href="#signup" class="link-cta">Enroll</a>
+          </article>
+
+          <article class="card">
+            <h4>Cloud Deployment & Observability</h4>
+            <p>Containers, infra-as-code, monitoring, and secure rollouts.</p>
+            <a href="#signup" class="link-cta">Enroll</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="labs" class="section muted-bg">
+        <div class="container">
+          <h3 class="section-title">Live labs & projects</h3>
+          <p class="muted">Real market data, sandboxed execution, and feedback from industry practitioners.</p>
+          <div class="labs-grid">
+            <div class="lab">
+              <h5>Backtest Studio</h5>
+              <p>Run strategies on historical ticks with built-in diagnostics.</p>
+            </div>
+            <div class="lab">
+              <h5>Orderbook Visualizer</h5>
+              <p>Instrument-level depth analysis and microstructure visualizations.</p>
+            </div>
+            <div class="lab">
+              <h5>Deployment Pipeline</h5>
+              <p>From model to container to cloud — continuous delivery for models.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section container">
+        <h3 class="section-title">Pricing</h3>
+        <div class="grid-3">
+          <div class="pricing-card">
+            <h4>Starter</h4>
+            <p class="price">Free</p>
+            <p>Intro courses, community access.</p>
+            <a class="btn-sm" href="#signup">Start</a>
+          </div>
+          <div class="pricing-card featured">
+            <h4>Pro</h4>
+            <p class="price">$49 / month</p>
+            <p>Full course catalog, labs, career workshops.</p>
+            <a class="btn-sm" href="#signup">Get Pro</a>
+          </div>
+          <div class="pricing-card">
+            <h4>Team</h4>
+            <p class="price">Contact</p>
+            <p>Private cohorts, company training paths.</p>
+            <a class="btn-sm" href="#signup">Contact Sales</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="signup" class="section cta-section">
+        <div class="container cta-grid">
+          <div>
+            <h3>Ready to build something that matters?</h3>
+            <p class="muted">Start a 14‑day free trial — no credit card required.</p>
+          </div>
+          <form class="signup-form" action="#" onsubmit="event.preventDefault(); alert('Thanks — sign-up stub. Replace with real flow.');">
+            <input type="email" name="email" placeholder="you@company.com" required>
+            <select name="plan" aria-label="plan">
+              <option value="starter">Starter (Free)</option>
+              <option value="pro">Pro — $49/mo</option>
+            </select>
+            <button class="btn-primary" type="submit">Start Free Trial</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>PulseFin</strong>
+          <p class="muted">Training. Projects. Jobs.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#courses">Courses</a>
+          <a href="#labs">Labs</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="copyright muted">© <span id="year"></span> PulseFin</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', e=>{
+          const t = document.querySelector(a.getAttribute('href'));
+          if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+        });
+      });
+    </script>
   </body>
 </html>
